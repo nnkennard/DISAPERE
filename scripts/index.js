@@ -166,6 +166,7 @@ function prepare_rebuttal_display(){
         row = table.insertRow()
         row.setAttribute('sentence_index', sentence_index)
         row.setAttribute('onMouseover', "populate_rebuttal_labels(this)")
+        row.setAttribute('onMouseout', "clear_labels()")
         sentence_cell = row.insertCell()
         sentence_cell.innerHTML = sentence["text"] + sentence["suffix"]
         for (key of rebuttal_label_keys) {
