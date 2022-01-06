@@ -80,7 +80,6 @@ function populate_rebuttal_labels(element) {
           for (sent of document.querySelectorAll('.contsent')){
             if (sent.getAttribute("sentence_index") == aligned_index.toString()) {
               sent.setAttribute('highlighted', "yes")
-              console.log(aligned_index, sent.getAttribute("sentence_index"), sent)
 
             }
           }
@@ -89,6 +88,7 @@ function populate_rebuttal_labels(element) {
 }
 
 prepare_review_display()
+prepare_rebuttal_display()
 
 function prepare_review_display() {
 
@@ -103,7 +103,7 @@ function prepare_review_display() {
     }
 
     table = document.getElementById("review_table")
-    table.innerHTML = "<th>Sentence</th><th>Review action</th><th>Aspect</th><th>Polarity</th><th>Fine review action</th>"
+    table.innerHTML = "<tr><th>Sentence</th><th>Review action</th><th>Aspect</th><th>Polarity</th><th>Fine review action</th></tr>"
     for (sentence of example_data["review_sentences"]) {
         row = table.insertRow()
         sentence_cell = row.insertCell()
@@ -122,7 +122,6 @@ function prepare_review_display() {
     }
 }
 
-prepare_rebuttal_display()
 function prepare_rebuttal_display(){
   review_area = document.getElementById("review_in_rebuttal_paragraph_area");
   review_area.innerHTML = ""
@@ -135,6 +134,21 @@ function prepare_rebuttal_display(){
       review_area.innerHTML += "<span class=\"contsent\" sentence_index=" + sentence_index + ">" + sentence_text + "</span>" + suffix
   }
 
+
+  review_area = document.getElementById("review_in_rebuttal_table_area");
+  review_area.innerHTML = ""
+
+  sentences = []
+  for (sentence_index in example_data["review_sentences"]) {
+      review_sentence = example_data["review_sentences"][sentence_index]
+      sentence_text = review_sentence["text"]
+      suffix = review_sentence["suffix"].replaceAll("\n", "<br/>")
+      review_area.innerHTML += "<span class=\"contsent\" sentence_index=" + sentence_index + ">" + sentence_text + "</span>" + suffix
+  }
+
+
+
+
   rebuttal_area = document.getElementById("rebuttal_paragraph_area");
 
   sentences = []
@@ -144,5 +158,27 @@ function prepare_rebuttal_display(){
       suffix = rebuttal_sentence["suffix"].replaceAll("\n", "<br/>")
       rebuttal_area.innerHTML += "<span class=\"sentence\" sentence_index=" + sentence_index + " onMouseout=\"clear_labels()\" onMouseover=\"populate_rebuttal_labels(this)\">" + sentence_text + "</span>" + suffix
   }
+
+  table = document.getElementById("rebuttal_table")
+    table.innerHTML = "<tr><th>Sentence</th><th>Rebuttal stance</th><th>Rebuttal action</th></tr>"
+    for (sentence_index in example_data["rebuttal_sentences"]) {
+        sentence = example_data["rebuttal_sentences"][sentence_index]
+        row = table.insertRow()
+        row.setAttribute('sentence_index', sentence_index)
+        row.setAttribute('onMouseover', "populate_rebuttal_labels(this)")
+        sentence_cell = row.insertCell()
+        sentence_cell.innerHTML = sentence["text"] + sentence["suffix"]
+        for (key of rebuttal_label_keys) {
+            cell = row.insertCell()
+            maybe_value = sentence[key]
+            if (maybe_value == "none"){
+              maybe_value = ""
+            } else {
+              maybe_value = maybe_value.split("_")[1]
+            }
+
+            cell.innerHTML = sentence[key]
+        }
+    }
 
 }
