@@ -11,7 +11,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    </head>
    <body>
-      <div class="container">
+      <!-- <div class="container is-widescreen"> -->
          <section class="section" id='section_header'>
             <div class="columns has-text-centered">
                <div class="column is-4 is-offset-4">
@@ -27,14 +27,16 @@
                </div>
             </div>
          </section>
+         <!-- SECTION: HEADER ^ ABOUT v ======================================================= -->
          <section class="section" id='section_about'>
             <h1 class="subtitle">About</h1>
             DISAPERE is a dataset for discourse structure in peer review. This website allows you to navigate the examples in the dataset. You can download the dataset here.
          </section>
+         <!-- SECTION: ABOUT ^ BROWSER v ====================================================== -->
          <section class="section" id='section_browser'>
             <h1 class="subtitle">DISAPERE Browser</h1>
-            <div class="container">
-               <div class="tabs is-centered">
+            <!-- <div class="container"> -->
+               <div class="tabs is-centered is-large">
                   <ul>
                      <li class="is-active" data-target="browse-review">
                         <a>Review</a> 
@@ -44,9 +46,9 @@
                      </li>
                   </ul>
                </div>
+               <!-- SUBSECTION: TABS ^ REV TAB v ============================================== -->
                <div class="px-2" id="tab-content">
-                  <div id="browse-review">
-                     <h3 class="is-size-5 title">Review</h3>
+                  <div id="browse-review" class="is-active">
                      <div class="control">
                         <div class="has-text-centered">
                            <label class="radio">
@@ -58,8 +60,10 @@
                            Table view
                            </label>
                            <br />
+                           <br />
                         </div>
                      </div>
+                     <!-- SUBSECTION: SWITCH ^ REV PARA BROWSER v ============================= -->
                      <div id="review-paragraph-browser">
                         <div class="columns">
                            <div class="column is-9" id="review_paragraph_area">
@@ -98,20 +102,61 @@
                            </div>
                         </div>
                      </div>
+                     <!-- SUBSECTION: REV PARA BROWSER ^ REV TABLE BROWSER v ================== -->
                      <div id="review-table-browser" style="display:none">
                         <table class="table" id="review_table">
                         </table>
                      </div>
                   </div>
                </div>
+               <!-- SUBSECTION: REV TAB ^ REB TAB v =========================================== -->
                <div class="px-2" id="tab-content">
-                  <div id="browse-rebuttal">
-                     Rebuttal here
+                  <div id="browse-rebuttal" class="is-hidden">
+                     <div class="control">
+                        <div class="has-text-centered">
+                           <label class="radio">
+                           <input type="radio" name="rebuttal_view" checked="checked" value="para">
+                           Paragraph view
+                           </label>
+                           <label class="radio">
+                           <input type="radio" name="rebuttal_view" value="table">
+                           Table view
+                           </label>
+                           <br />
+                           <br />
+                        </div>
+                     </div>
+                     <!-- SUBSECTION: SWITCH ^ REB PARA BROWSER v ============================= -->
+                     <div id="rebuttal-paragraph-browser">
+                        <div class="columns">
+                           <div class="column is-5" id="review_in_rebuttal_paragraph_area">
+                           </div>
+                           <div class="column is-7">
+                              <div class="card">
+                                 <table class="table">
+                                    <tr><th>Rebuttal <br/> stance</th><td style="height:50px;width:100px"><span id="reb_para_coarse"></span>
+                                       <th>Rebuttal <br/> action</th><td><span id="reb_para_fine"></span>
+                                    </tr>
+                                 </table>
+                              </div>
+                              <br/>
+                              <div class="box" id="rebuttal_paragraph_area" style="height:400px;overflow-y:scroll">
+                              </div>
+                           </div>
+                           
+                        </div>
+                     </div>
+                     <!-- SUBSECTION: REV PARA BROWSER ^ REV TABLE BROWSER v ================== -->
+                     <div id="rebuttal-table-browser" style="display:none">
+                        Table view
+                        <table class="table" id="rebuttal_table">
+                        </table>
+                     </div>
                   </div>
                </div>
-            </div>
+            <!-- </div> -->
          </section>
-      </div>
+      <!-- </div> -->
       <script src="data/BJlqUqW3tH.js"></script>
       <script src="scripts/index.js"></script>
    </body>

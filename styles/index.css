@@ -2,3 +2,7 @@
 .sentence:hover {
     background-color:  #d5f5e3;
 }
+
+.contsent[highlighted=yes] { 
+  background-color: #fcf3cf;
+}
