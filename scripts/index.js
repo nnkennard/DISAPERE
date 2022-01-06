@@ -1,3 +1,21 @@
+// Radio buttons
+
+$(document).ready(function() {
+    $('input:radio[name=review_view]').change(function() {
+      console.log(this.value)
+        if (this.value == 'para') {
+            document.getElementById('review-paragraph-browser').setAttribute("style", "display:inline")
+            document.getElementById('review-table-browser').setAttribute("style", "display:none")
+        }
+        else if (this.value == 'table') {
+            document.getElementById('review-paragraph-browser').setAttribute("style", "display:none")
+            document.getElementById('review-table-browser').setAttribute("style", "display:inline")
+        }
+    });
+});
+
+
+
 // tabs
 const tabs = document.querySelectorAll('.tabs li');
 const tabContentBoxes = document.querySelectorAll('#tab-content > div');
@@ -8,7 +26,6 @@ tabs.forEach(tab => {
         tab.classList.add('is-active');
 
         const target = tab.dataset.target;
-        // console.log(target);
         tabContentBoxes.forEach(box => {
             if (box.getAttribute('id') === target) {
                 box.classList.remove('is-hidden');
@@ -52,7 +69,6 @@ function prepare_review_display() {
         sentence_cell.innerHTML = sentence["text"] + sentence["suffix"]
         for (key of review_label_keys) {
             cell = row.insertCell()
-            console.log(sentence[key],sentence[key].split("_")[1])
             maybe_value = sentence[key]
             if (maybe_value == "none"){
               maybe_value = ""

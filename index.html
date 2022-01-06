@@ -36,52 +36,78 @@
             <div class="container">
                <div class="tabs is-centered">
                   <ul>
-                     <li class="is-active" data-target="product-details">
+                     <li class="is-active" data-target="browse-review">
                         <a>Review</a> 
                      </li>
-                     <li data-target="delivery-information">
+                     <li data-target="browse-rebuttal">
                         <a>Rebuttal</a>
                      </li>
                   </ul>
                </div>
                <div class="px-2" id="tab-content">
-                  <div id="product-details">
+                  <div id="browse-review">
                      <h3 class="is-size-5 title">Review</h3>
                      <div class="control">
                         <div class="has-text-centered">
                            <label class="radio">
-                           <input type="radio" name="review_view">
+                           <input type="radio" name="review_view" checked="checked" value="para">
                            Paragraph view
                            </label>
                            <label class="radio">
-                           <input type="radio" name="review_view">
+                           <input type="radio" name="review_view" value="table">
                            Table view
                            </label>
                            <br />
                         </div>
                      </div>
-                     <div class="columns">
-                        <div class="column is-9" id="review_paragraph_area">
-
-                        </div>
-                        <div class="column is-3">
-
-                           <table class="table">
-                              <tr><th>Category </th> <th>Label</th></tr>
-                              <tr><td>Review action </td><td><p id="rev_para_coarse"></p></td></tr>
-                              <tr><td>Aspect </td><td><p id="rev_para_asp"></p></td></tr>
-                              <tr><td>Polarity </td><td><p id="rev_para_pol"></p></td></tr>
-                              <tr><td>Fine review action </td><td><p id="rev_para_fine"></p></td></tr>
-                           </table>
+                     <div id="review-paragraph-browser">
+                        <div class="columns">
+                           <div class="column is-9" id="review_paragraph_area">
+                           </div>
+                           <div class="column is-3">
+                              <table class="table">
+                                 <tr>
+                                    <th>Category </th>
+                                    <th>Label</th>
+                                 </tr>
+                                 <tr>
+                                    <td>Review action </td>
+                                    <td>
+                                       <p id="rev_para_coarse"></p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>Aspect </td>
+                                    <td>
+                                       <p id="rev_para_asp"></p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>Polarity </td>
+                                    <td>
+                                       <p id="rev_para_pol"></p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>Fine review action </td>
+                                    <td>
+                                       <p id="rev_para_fine"></p>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
                         </div>
                      </div>
-
-                     <table class="table" id="review_table">
-                     </table>
-
-
+                     <div id="review-table-browser" style="display:none">
+                        <table class="table" id="review_table">
+                        </table>
+                     </div>
                   </div>
-                  
+               </div>
+               <div class="px-2" id="tab-content">
+                  <div id="browse-rebuttal">
+                     Rebuttal here
+                  </div>
                </div>
             </div>
          </section>
