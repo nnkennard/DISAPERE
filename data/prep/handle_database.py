@@ -136,15 +136,23 @@ class AnnotationCollector(object):
 
   def _remap_review_sentences(self, review_sentences):
     sentence_map = {}
-    for sentence in review_sentences:
-      all_together_dict = sentence["fields"]
-      maybe_labels = dpl.recursive_json_load(all_together_dict["labels"])
-      if "0" not in maybe_labels:
-        #raise dpl.NoLabelError
-        pass
-      else:
-        all_together_dict.update(maybe_labels["0"])
-      sentence_map[all_together_dict["review_sentence_index"]] = all_together_dict
+    with open('doubles.txt', 'w') as f:
+      for sentence in review_sentences:
+        all_together_dict = sentence["fields"]
+        maybe_labels = dpl.recursive_json_load(all_together_dict["labels"])
+        if maybe_labels and maybe_labels["0"] and maybe_labels["1"]:
+          f.write("\t".join(
+            ["Double>>",
+            maybe_labels["0"]['arg'],
+            maybe_labels["1"]["arg"],
+            all_together_dict["review_id"],
+            str(all_together_dict["review_sentence_index"])]) + "\n")
+        if "0" not in maybe_labels:
+          #raise dpl.NoLabelError
+          pass
+        else:
+          all_together_dict.update(maybe_labels["0"])
+        sentence_map[all_together_dict["review_sentence_index"]] = all_together_dict
     return sentence_map
 
   def freeze(self):
