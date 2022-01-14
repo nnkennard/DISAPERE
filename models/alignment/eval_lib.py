@@ -24,12 +24,16 @@ logger = logging.getLogger(__name__)
 # model = SentenceTransformer('output/training_OnlineConstrativeLoss-2021-10-16_03-52-04')  # model trained with contrastive and NO_MATCH
 # model = SentenceTransformer('all-MiniLM-L6-v2')  # model trained with contrastive and NO_MATCH
 
+model = SentenceTransformer('output/training_OnlineConstrativeLoss-2022-01-14_16-18-32') # Contrastive, correct NO_MATCH
 
-def eval_dir(model_save_path,data_dir="../data_prep/final_dataset", subset="dev"):
+
+def eval_dir(model_save_path,data_dir="../../DISAPERE/final_dataset", subset="dev"):
 
   glob_path = data_dir + "/" + subset + "/*.json"
   logger.info("Loading model...")
   model = SentenceTransformer(model_save_path)
+
+  no_match_counter = collections.Counter()
 
   all_rr = []
   for filename in glob.glob(glob_path):
@@ -46,12 +50,16 @@ review_sentences_text)
     cosine_scores = util.pytorch_cos_sim(rebuttal_sentences_emb,
                                          review_sentences_emb)
     ranks = torch.argsort(-cosine_scores, dim=1)
+    print(ranks)
     for ctr, rb_s in enumerate(data["rebuttal_sentences"]):
       rr = 0
+      ranks_rbs = ranks[ctr]
       _, alignments = rb_s["alignment"]
       if alignments is None:
         alignments = [len(review_sentences_text) - 1]
-      ranks_rbs = ranks[ctr]
+        print(True, ranks_rbs.index(len(ranks_rbs)))
+      else:
+        print(False, ranks_rbs.index(len(ranks_rbs)))
       success_ctr = 0  # number of alignments found successfully so far
       for r_ctr, r in enumerate(ranks_rbs):
         if r in alignments:
