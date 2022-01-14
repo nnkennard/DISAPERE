@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 
 NUM_EPOCHS = 10
-TRAIN_BATCH_SIZE = 256
+TRAIN_BATCH_SIZE = 32
 DISTANCE_METRIC = losses.SiameseDistanceMetric.COSINE_DISTANCE
 MARGIN = 5
 TRAIN_DATA_DIR = "../../DISAPERE/final_dataset/train"
@@ -68,7 +68,7 @@ def main():
             warmup_steps=1000,
             output_path=model_save_path)
   eval_dir(model_save_path)
-  eval_dir(model_save_path, subset="test")
+  #eval_dir(model_save_path, subset="test")
 
 
 if __name__ == "__main__":
