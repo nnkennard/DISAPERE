@@ -58,9 +58,9 @@ review_sentences_text)
       _, alignments = rb_s["alignment"]
       if alignments is None:
         alignments = [len(review_sentences_text) - 1]
-        print(True, ranks_rbs.index(len(ranks_rbs)))
+        print(True, ranks_rbs.tolist().index(len(ranks_rbs) - 1))
       else:
-        print(False, ranks_rbs.index(len(ranks_rbs)))
+        print(False, ranks_rbs.tolist().index(len(ranks_rbs) - 1))
       success_ctr = 0  # number of alignments found successfully so far
       for r_ctr, r in enumerate(ranks_rbs):
         if r in alignments:

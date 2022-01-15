@@ -17,7 +17,8 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
 logger = logging.getLogger(__name__)
 
 
-NUM_EPOCHS = 10
+#NUM_EPOCHS = 10
+NUM_EPOCHS = 1
 TRAIN_BATCH_SIZE = 32
 DISTANCE_METRIC = losses.SiameseDistanceMetric.COSINE_DISTANCE
 MARGIN = 5
@@ -36,7 +37,7 @@ def main():
 
   model, model_save_path = create_model()
 
-  train_sentence_pairs = read_data(TRAIN_DATA_DIR)
+  train_sentence_pairs = read_data(TRAIN_DATA_DIR)[:10]
   train_samples = [
       InputExample(texts=[s1, s2], label=label)
       for (s1, s2, label) in train_sentence_pairs
