@@ -4,18 +4,15 @@ import os
 from sentence_transformers import losses, LoggingHandler, SentenceTransformer, evaluation
 from sentence_transformers.readers import InputExample
 
-
 from data_utils import read_data
 from eval_lib import eval_dir
 from torch.utils.data import DataLoader
-
 
 logging.basicConfig(format='%(asctime)s - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                     level=logging.INFO,
                     handlers=[LoggingHandler()])
 logger = logging.getLogger(__name__)
-
 
 #NUM_EPOCHS = 10
 NUM_EPOCHS = 1
@@ -55,8 +52,8 @@ def main():
   # We optimize the model with respect to the score from the last evaluator (scores[-1])
   seq_evaluator = evaluation.SequentialEvaluator(
       [
-          evaluation.BinaryClassificationEvaluator(dev_revs,
-                                                   dev_rebs, dev_labels)
+          evaluation.BinaryClassificationEvaluator(dev_revs, dev_rebs,
+                                                   dev_labels)
       ],
       main_score_function=lambda scores: scores[-1])
   logger.info("Evaluate model without training")

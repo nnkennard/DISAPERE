@@ -43,7 +43,10 @@ def main():
     for row in reader:
       if not row['dataset'] == args.task:
         continue
-      label_id = label2int[row['label']]
+      if args.do_binary:
+        label_id = 1 - int(row['label'] == "none")
+      else:
+        label_id = label2int[row['label']]
       samples[row['split']].append((row['sentence1'], label_id))
       dataframe_builders[row['split']].append({
           'sentence': row['sentence1'],
