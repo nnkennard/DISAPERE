@@ -42,7 +42,6 @@ class BERTBaseUncased(nn.Module):
 class BERTDataset:
 
   def __init__(self, sample_list):
-    sample_list = sample_list[:10]
     reviews, targets = zip(*sample_list)
     self.review = reviews
     self.target = targets
