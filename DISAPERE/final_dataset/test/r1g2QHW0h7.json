@@ -69,7 +69,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1g2QHW0h7",
@@ -89,7 +89,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1g2QHW0h7",
@@ -139,7 +139,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1g2QHW0h7",

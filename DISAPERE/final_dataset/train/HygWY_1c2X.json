@@ -99,7 +99,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "arg_other",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HygWY_1c2X",
@@ -259,7 +259,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_motivation-impact",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HygWY_1c2X",
@@ -269,7 +269,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_motivation-impact",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HygWY_1c2X",
@@ -319,7 +319,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_motivation-impact",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HygWY_1c2X",
@@ -339,7 +339,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HygWY_1c2X",
@@ -349,7 +349,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HygWY_1c2X",
@@ -389,7 +389,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HygWY_1c2X",
@@ -429,7 +429,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HygWY_1c2X",
@@ -439,7 +439,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_result",
       "asp": "asp_motivation-impact",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HygWY_1c2X",
@@ -469,7 +469,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HygWY_1c2X",

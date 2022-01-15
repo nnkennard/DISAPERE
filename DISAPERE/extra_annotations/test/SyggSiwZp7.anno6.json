@@ -59,7 +59,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SyggSiwZp7",
@@ -139,7 +139,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SyggSiwZp7",
@@ -159,7 +159,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_replicability",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SyggSiwZp7",

@@ -99,7 +99,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "BylSI7T6qr",
@@ -249,7 +249,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "BylSI7T6qr",

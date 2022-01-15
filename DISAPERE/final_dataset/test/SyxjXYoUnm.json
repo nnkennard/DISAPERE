@@ -129,7 +129,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SyxjXYoUnm",
@@ -169,7 +169,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SyxjXYoUnm",
@@ -189,7 +189,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SyxjXYoUnm",
@@ -199,7 +199,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SyxjXYoUnm",
@@ -229,7 +229,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

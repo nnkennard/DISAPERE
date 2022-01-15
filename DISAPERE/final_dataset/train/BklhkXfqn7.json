@@ -199,7 +199,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "BklhkXfqn7",
@@ -209,7 +209,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "BklhkXfqn7",

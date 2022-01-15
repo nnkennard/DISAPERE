@@ -169,7 +169,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "BJgICDN92m",
@@ -199,7 +199,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "BJgICDN92m",

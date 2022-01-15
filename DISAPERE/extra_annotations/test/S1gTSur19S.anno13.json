@@ -39,7 +39,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "S1gTSur19S",
@@ -219,7 +219,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "S1gTSur19S",
@@ -229,7 +229,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_typo",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "S1gTSur19S",
@@ -239,7 +239,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

@@ -129,7 +129,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

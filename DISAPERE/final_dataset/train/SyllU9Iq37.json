@@ -239,7 +239,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_motivation-impact",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

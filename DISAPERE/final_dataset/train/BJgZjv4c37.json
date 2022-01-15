@@ -69,7 +69,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "BJgZjv4c37",
@@ -79,7 +79,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "BJgZjv4c37",
@@ -109,7 +109,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "BJgZjv4c37",

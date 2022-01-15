@@ -114,23 +114,12 @@ def recursive_json_load(in_repr):
   return in_repr
 
 
-def clean_review_sentence_dict(rev_sent_dict):
-  new_map = {}
-  for k, v in rev_sent_dict["fields"].items():
-    if k == "labels":
-      labels = recursive_json_load(v)
-      if not len(labels):
-        raise NoLabelError
-      new_map.update(labels["0"])
-    else:
-      new_map[k] = v
-  return new_map
-
-
 def clean_review_label(review_sentence_row):
   """Convert review labels to uniform format."""
   asp = review_sentence_row.get('asp', None)
   pol = review_sentence_row.get('pol', None)
+  if pol == "U-Neutral": # Treat neutral polarity as None
+    pol = None
   coarse = review_sentence_row.get('arg', None)
   if coarse == 'Structuring':
     fine = "Structuring." + review_sentence_row['struc']

@@ -69,7 +69,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_motivation-impact",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rkgIzF3Zcr",
@@ -79,7 +79,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

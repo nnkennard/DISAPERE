@@ -99,7 +99,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "B1xF4md62m",
@@ -109,7 +109,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "B1xF4md62m",
@@ -189,7 +189,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "B1xF4md62m",
@@ -199,7 +199,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "B1xF4md62m",
@@ -219,7 +219,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

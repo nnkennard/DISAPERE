@@ -109,7 +109,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske_-TWah7",
@@ -159,7 +159,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske_-TWah7",
@@ -179,7 +179,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske_-TWah7",
@@ -319,7 +319,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske_-TWah7",

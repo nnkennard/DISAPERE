@@ -99,7 +99,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SyefBu5O3m",
@@ -129,7 +129,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SyefBu5O3m",
@@ -169,7 +169,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_result",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SyefBu5O3m",
@@ -179,7 +179,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_motivation-impact",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

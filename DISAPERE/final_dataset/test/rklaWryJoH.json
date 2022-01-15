@@ -109,7 +109,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -119,7 +119,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -129,7 +129,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -139,7 +139,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -149,7 +149,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -159,7 +159,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -169,7 +169,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -179,7 +179,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -189,7 +189,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -199,7 +199,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -209,7 +209,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -219,7 +219,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -229,7 +229,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -239,7 +239,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -249,7 +249,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -259,7 +259,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -269,7 +269,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -279,7 +279,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -289,7 +289,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -299,7 +299,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -309,7 +309,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -319,7 +319,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -329,7 +329,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -349,7 +349,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_result",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -359,7 +359,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_replicability",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -379,7 +379,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_motivation-impact",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rklaWryJoH",
@@ -389,7 +389,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [
