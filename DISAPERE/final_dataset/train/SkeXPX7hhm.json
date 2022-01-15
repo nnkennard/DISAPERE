@@ -99,7 +99,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SkeXPX7hhm",
@@ -109,7 +109,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SkeXPX7hhm",
@@ -129,7 +129,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "SkeXPX7hhm",

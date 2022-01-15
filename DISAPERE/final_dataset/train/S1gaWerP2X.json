@@ -439,7 +439,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_replicability",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "S1gaWerP2X",
@@ -449,7 +449,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

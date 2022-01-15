@@ -469,7 +469,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1x8O_Sw3X",
@@ -479,7 +479,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_result",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1x8O_Sw3X",

@@ -79,7 +79,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_originality",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -129,7 +129,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -169,7 +169,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -179,7 +179,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -189,7 +189,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -209,7 +209,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -229,7 +229,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -259,7 +259,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -289,7 +289,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -319,7 +319,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -329,7 +329,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -379,7 +379,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -409,7 +409,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -439,7 +439,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -449,7 +449,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -459,7 +459,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -469,7 +469,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -479,7 +479,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -489,7 +489,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -499,7 +499,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -509,7 +509,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -519,7 +519,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -529,7 +529,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -589,7 +589,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -609,7 +609,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_motivation-impact",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -619,7 +619,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -629,7 +629,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -649,7 +649,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -679,7 +679,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_typo",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -689,7 +689,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_typo",
       "asp": "arg_other",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -699,7 +699,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_typo",
       "asp": "arg_other",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -719,7 +719,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_typo",
       "asp": "arg_other",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",
@@ -729,7 +729,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_typo",
       "asp": "arg_other",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "rked778JaQ",

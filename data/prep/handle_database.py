@@ -18,7 +18,7 @@ parser.add_argument('-t',
 parser.add_argument(
     '-a',
     '--annotation_dump',
-    default="../raw/raw_annotations_20210820.json",
+    default="../raw/anonymized_annotations_20210820.json",
     type=str,
     help='path to annotation dump from annotation server')
 parser.add_argument('-i',
@@ -45,14 +45,10 @@ TYPE_TO_KEY_MAP = {
     AnnotationTypes.reb_sent_ann: "rebuttal_sentence_index",
 }
 
-with open('annomap.json', 'r') as f:
-  ANONYMIZER = json.load(f)
-
 REVIEW_ID, INITIALS = "review_id initials".split()
 
-
 def get_key_from_annotation(ann):
-  return ann["fields"][REVIEW_ID], ANONYMIZER[ann["fields"][INITIALS]]
+  return ann["fields"][REVIEW_ID], ann["fields"][INITIALS]
 
 Sentence = collections.namedtuple("Sentence", "text suffix".split())
 
@@ -136,15 +132,23 @@ class AnnotationCollector(object):
 
   def _remap_review_sentences(self, review_sentences):
     sentence_map = {}
-    for sentence in review_sentences:
-      all_together_dict = sentence["fields"]
-      maybe_labels = dpl.recursive_json_load(all_together_dict["labels"])
-      if "0" not in maybe_labels:
-        #raise dpl.NoLabelError
-        pass
-      else:
-        all_together_dict.update(maybe_labels["0"])
-      sentence_map[all_together_dict["review_sentence_index"]] = all_together_dict
+    with open('doubles.txt', 'w') as f:
+      for sentence in review_sentences:
+        all_together_dict = sentence["fields"]
+        maybe_labels = dpl.recursive_json_load(all_together_dict["labels"])
+        if maybe_labels and maybe_labels["0"] and maybe_labels["1"]:
+          f.write("\t".join(
+            ["Double>>",
+            maybe_labels["0"]['arg'],
+            maybe_labels["1"]["arg"],
+            all_together_dict["review_id"],
+            str(all_together_dict["review_sentence_index"])]) + "\n")
+        if "0" not in maybe_labels:
+          #raise dpl.NoLabelError
+          pass
+        else:
+          all_together_dict.update(maybe_labels["0"])
+        sentence_map[all_together_dict["review_sentence_index"]] = all_together_dict
     return sentence_map
 
   def freeze(self):

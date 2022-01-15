@@ -29,7 +29,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_originality",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Sye4stm16X",
@@ -79,7 +79,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Sye4stm16X",
@@ -89,7 +89,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

@@ -229,7 +229,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1e9Ipmo_r",
@@ -269,7 +269,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1e9Ipmo_r",
@@ -279,7 +279,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1e9Ipmo_r",
@@ -289,7 +289,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1e9Ipmo_r",
@@ -299,7 +299,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1e9Ipmo_r",
@@ -319,7 +319,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1e9Ipmo_r",
@@ -339,7 +339,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_typo",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1e9Ipmo_r",
@@ -349,7 +349,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_typo",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1e9Ipmo_r",
@@ -369,7 +369,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_typo",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "r1e9Ipmo_r",

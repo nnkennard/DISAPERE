@@ -99,7 +99,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_originality",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -139,7 +139,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -159,7 +159,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -169,7 +169,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -209,7 +209,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -289,7 +289,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -299,7 +299,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -309,7 +309,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -319,7 +319,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -329,7 +329,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -359,7 +359,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -369,7 +369,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -379,7 +379,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -389,7 +389,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -399,7 +399,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "arg_other",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -409,7 +409,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -419,7 +419,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_result",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -429,7 +429,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "HyeHzlJ537",
@@ -439,7 +439,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

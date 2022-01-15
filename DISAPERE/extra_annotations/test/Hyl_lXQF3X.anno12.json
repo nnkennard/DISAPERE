@@ -129,7 +129,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Hyl_lXQF3X",
@@ -139,7 +139,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Hyl_lXQF3X",
@@ -299,7 +299,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Hyl_lXQF3X",
@@ -329,7 +329,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Hyl_lXQF3X",
@@ -379,7 +379,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "arg_other",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Hyl_lXQF3X",
@@ -389,7 +389,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_edit",
       "asp": "asp_clarity",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Hyl_lXQF3X",
@@ -399,7 +399,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_motivation-impact",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Hyl_lXQF3X",
@@ -409,7 +409,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_motivation-impact",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Hyl_lXQF3X",

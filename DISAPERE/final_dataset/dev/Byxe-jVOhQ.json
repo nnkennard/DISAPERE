@@ -49,7 +49,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Byxe-jVOhQ",
@@ -69,7 +69,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Byxe-jVOhQ",
@@ -89,7 +89,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Byxe-jVOhQ",
@@ -99,7 +99,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_soundness-correctness",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Byxe-jVOhQ",
@@ -109,7 +109,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_meaningful-comparison",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Byxe-jVOhQ",
@@ -129,7 +129,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Byxe-jVOhQ",
@@ -139,7 +139,7 @@
       "coarse": "arg_evaluative",
       "fine": "none",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

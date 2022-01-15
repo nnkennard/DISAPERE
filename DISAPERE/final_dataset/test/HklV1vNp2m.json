@@ -89,7 +89,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_replicability",
-      "pol": "pol_neutral"
+      "pol": "none"
     }
   ],
   "rebuttal_sentences": [

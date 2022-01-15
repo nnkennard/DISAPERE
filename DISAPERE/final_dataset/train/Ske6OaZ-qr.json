@@ -49,7 +49,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_result",
       "asp": "asp_replicability",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske6OaZ-qr",
@@ -129,7 +129,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_result",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske6OaZ-qr",
@@ -139,7 +139,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_result",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske6OaZ-qr",
@@ -169,7 +169,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske6OaZ-qr",
@@ -179,7 +179,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_clarification",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske6OaZ-qr",
@@ -199,7 +199,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_explanation",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske6OaZ-qr",
@@ -229,7 +229,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske6OaZ-qr",
@@ -239,7 +239,7 @@
       "coarse": "arg_request",
       "fine": "arg-request_experiment",
       "asp": "asp_substance",
-      "pol": "pol_neutral"
+      "pol": "none"
     },
     {
       "review_id": "Ske6OaZ-qr",
