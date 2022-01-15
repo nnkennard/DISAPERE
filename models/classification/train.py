@@ -1,3 +1,4 @@
+import argparse
 import pickle
 import csv
 import collections
@@ -16,6 +17,12 @@ from transformers import get_linear_schedule_with_warmup
 import classification_lib
 from classification_lib import Config
 
+parser = argparse.ArgumentParser(
+        description='Run independent classification')
+parser.add_argument('-i', '--input_file', default="data/all_DISAPERE.tsv", type=str, help='Input tsv file')
+parser.add_argument('-b', '--do_binary', action='store_true', help='Convert to binary task')
+parser.add_argument('-t', '--task', type=str, help='Which classification task')
+
 
 def get_num_train_steps(sample_list):
   return int(len(sample_list) / Config.TRAIN_BATCH_SIZE * Config.EPOCHS)
@@ -23,26 +30,24 @@ def get_num_train_steps(sample_list):
 
 def main():
 
-  data_file, task = sys.argv[1:3]
+  args = parser.parse_args()
 
   with open("data/label_map.pkl", 'rb') as f:
-    label_map = pickle.load(f)
+    label2int = pickle.load(f)[args.task]
 
-  label2int = label_map["coarse"]
-
-  model_path = "models/" + task + "_best.pt"
+  model_path = "models/" + args.task + "_best.pt"
   samples = collections.defaultdict(list)
   dataframe_builders = collections.defaultdict(list)
-  with open(data_file, 'r', encoding='utf8') as fIn:
+  with open(args.input_file, 'r', encoding='utf8') as fIn:
     reader = csv.DictReader(fIn, delimiter='\t')
     for row in reader:
-      if not row['dataset'] == task:
+      if not row['dataset'] == args.task:
         continue
       label_id = label2int[row['label']]
       samples[row['split']].append((row['sentence1'], label_id))
       dataframe_builders[row['split']].append({
           'sentence': row['sentence1'],
-          'task': task,
+          'task': args.task,
           'label': row['label'],
           'encoded': float(label_id)
       })
@@ -128,7 +133,7 @@ def main():
     final_df = pd.concat([dataframes[subset], result_df], axis=1)
     #assert all(i.encoded == i.target for i in final_df.itertuples())
 
-    result_file = "results/" + subset + "_" + task + ".csv"
+    result_file = "results/" + subset + "_" + args.task + ".csv"
     final_df.to_csv(result_file)
 
 
