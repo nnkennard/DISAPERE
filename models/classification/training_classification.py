@@ -38,8 +38,8 @@ sts_dataset_path = 'data/stsbenchmark.tsv.gz'
 #    util.http_get('https://sbert.net/datasets/AllNLI.tsv.gz', nli_dataset_path)
 
 if not os.path.exists(sts_dataset_path):
-    util.http_get('https://sbert.net/datasets/stsbenchmark.tsv.gz', sts_dataset_path)
-
+  util.http_get('https://sbert.net/datasets/stsbenchmark.tsv.gz',
+                sts_dataset_path)
 
 #You can specify any huggingface/transformers pre-trained model here, for example, bert-base-uncased, roberta-base, xlm-roberta-base
 model_name = sys.argv[1] if len(sys.argv) > 1 else 'bert-base-uncased'
@@ -47,54 +47,56 @@ model_name = sys.argv[1] if len(sys.argv) > 1 else 'bert-base-uncased'
 # Read the dataset
 train_batch_size = 16
 
-
-model_save_path = 'output/training_nli_'+model_name.replace("/", "-")+'-'+datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-
+model_save_path = 'output/training_nli_' + model_name.replace(
+    "/", "-") + '-' + datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
 # Use Huggingface/transformers model (like BERT, RoBERTa, XLNet, XLM-R) for mapping tokens to embeddings
 word_embedding_model = models.Transformer(model_name)
 
 # Apply mean pooling to get one fixed sized sentence vector
-pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension(),
-                               pooling_mode_mean_tokens=True,
-                               pooling_mode_cls_token=False,
-                               pooling_mode_max_tokens=False)
+pooling_model = models.Pooling(
+    word_embedding_model.get_word_embedding_dimension(),
+    pooling_mode_mean_tokens=True,
+    pooling_mode_cls_token=False,
+    pooling_mode_max_tokens=False)
 
 model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
-
 
 # Read the AllNLI.tsv.gz file and create the training dataset
 logging.info("Read AllNLI train dataset")
 
 with open("data/label_map.pkl", 'rb') as f:
-    label_map = pickle.load(f)
+  label_map = pickle.load(f)
 
 label2int = label_map["coarse"]
 
-
 samples = collections.defaultdict(list)
 with gzip.open(nli_dataset_path, 'rt', encoding='utf8') as fIn:
-    reader = csv.DictReader(fIn, delimiter='\t')
-    for row in reader:
-        if not row['dataset'] == 'coarse':
-            continue
-        label_id = label2int[row['label']]
-        samples[row['split']].append(InputExample(texts=[row['sentence1'], row['sentence2']], label=label_id))
+  reader = csv.DictReader(fIn, delimiter='\t')
+  for row in reader:
+    if not row['dataset'] == 'coarse':
+      continue
+    label_id = label2int[row['label']]
+    samples[row['split']].append(
+        InputExample(texts=[row['sentence1'], row['sentence2']],
+                     label=label_id))
 
+train_dataloader = DataLoader(samples['train'],
+                              shuffle=True,
+                              batch_size=train_batch_size)
+train_loss = losses.SoftmaxLoss(
+    model=model,
+    sentence_embedding_dimension=model.get_sentence_embedding_dimension(),
+    num_labels=len(label2int))
 
-train_dataloader = DataLoader(samples['train'], shuffle=True, batch_size=train_batch_size)
-train_loss = losses.SoftmaxLoss(model=model, sentence_embedding_dimension=model.get_sentence_embedding_dimension(), num_labels=len(label2int))
-
-
-dev_evaluator = LabelAccuracyEvaluator(samples['dev'],  name='sts-dev')
+dev_evaluator = LabelAccuracyEvaluator(samples['dev'], name='sts-dev')
 
 # Configure the training
 num_epochs = 1
 
-warmup_steps = math.ceil(len(train_dataloader) * num_epochs * 0.1) #10% of train data for warm-up
+warmup_steps = math.ceil(len(train_dataloader) * num_epochs *
+                         0.1)  #10% of train data for warm-up
 logging.info("Warmup-steps: {}".format(warmup_steps))
-
-
 
 # Train the model
 model.fit(train_objectives=[(train_dataloader, train_loss)],
@@ -102,10 +104,7 @@ model.fit(train_objectives=[(train_dataloader, train_loss)],
           epochs=num_epochs,
           evaluation_steps=1000,
           warmup_steps=warmup_steps,
-          output_path=model_save_path
-          )
-
-
+          output_path=model_save_path)
 
 ##############################################################################
 #
@@ -115,13 +114,15 @@ model.fit(train_objectives=[(train_dataloader, train_loss)],
 
 test_samples = []
 with gzip.open(sts_dataset_path, 'rt', encoding='utf8') as fIn:
-    reader = csv.DictReader(fIn, delimiter='\t', quoting=csv.QUOTE_NONE)
-    for row in reader:
-        print("!! row!!", row)
-        if row['split'] == 'test':
-            score = float(row['score']) / 5.0 #Normalize score to range 0 ... 1
-            test_samples.append(InputExample(texts=[row['sentence1'], row['sentence2']], label=score))
+  reader = csv.DictReader(fIn, delimiter='\t', quoting=csv.QUOTE_NONE)
+  for row in reader:
+    print("!! row!!", row)
+    if row['split'] == 'test':
+      score = float(row['score']) / 5.0  #Normalize score to range 0 ... 1
+      test_samples.append(
+          InputExample(texts=[row['sentence1'], row['sentence2']], label=score))
 
 model = SentenceTransformer(model_save_path)
-test_evaluator = EmbeddingSimilarityEvaluator.from_input_examples(test_samples, batch_size=train_batch_size, name='sts-test')
+test_evaluator = EmbeddingSimilarityEvaluator.from_input_examples(
+    test_samples, batch_size=train_batch_size, name='sts-test')
 test_evaluator(model, output_path=model_save_path)

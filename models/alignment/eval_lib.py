@@ -1,3 +1,4 @@
+import collections
 import glob
 import json
 import os
@@ -24,7 +25,7 @@ logger = logging.getLogger(__name__)
 # model = SentenceTransformer('output/training_OnlineConstrativeLoss-2021-10-16_03-52-04')  # model trained with contrastive and NO_MATCH
 # model = SentenceTransformer('all-MiniLM-L6-v2')  # model trained with contrastive and NO_MATCH
 
-model = SentenceTransformer('output/training_OnlineConstrativeLoss-2022-01-14_16-18-32') # Contrastive, correct NO_MATCH
+#model = SentenceTransformer('output/training_OnlineConstrativeLoss-2022-01-14_16-18-32') # Contrastive, correct NO_MATCH
 
 
 def eval_dir(model_save_path,data_dir="../../DISAPERE/final_dataset", subset="dev"):
