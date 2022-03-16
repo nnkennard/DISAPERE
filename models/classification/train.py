@@ -10,6 +10,8 @@ import numpy as np
 import sys
 import transformers
 
+from torch.utils.data import WeightedRandomSampler
+
 from sklearn import metrics
 from transformers import AdamW
 from transformers import get_linear_schedule_with_warmup
@@ -27,6 +29,12 @@ parser.add_argument('-t', '--task', type=str, help='Which classification task')
 def get_num_train_steps(sample_list):
   return int(len(sample_list) / Config.TRAIN_BATCH_SIZE * Config.EPOCHS)
 
+
+def get_sample_weights(dataframe_dicts):
+  classes = [x['encoded'] for x in dataframe_dicts]
+  weight_recips = collections.Counter(classes)
+  weights = {x:len(classes)/y for x, y in weight_recips.items()}
+  return  [weights[c] for c in classes]
 
 def main():
 
@@ -55,6 +63,10 @@ def main():
           'encoded': float(label_id)
       })
 
+  sample_weights = get_sample_weights(dataframe_builders['train'])
+  sampler = WeightedRandomSampler(torch.from_numpy(np.array(sample_weights),
+  ),len(sample_weights))
+
   dataframes = {
       split: pd.DataFrame.from_dict(dicts)
       for split, dicts in dataframe_builders.items()
@@ -72,7 +84,13 @@ def main():
       num_worker = 1
 
     dataset = classification_lib.BERTDataset(sample_list)
-    dataloaders[subset] = torch.utils.data.DataLoader(dataset,
+    if subset == 'train':
+      dataloaders[subset] = torch.utils.data.DataLoader(dataset,
+                                                      batch_size=batch_size,
+                                                      num_workers=num_workers,
+                                                      sampler=sampler)
+    else:
+      dataloaders[subset] = torch.utils.data.DataLoader(dataset,
                                                       batch_size=batch_size,
                                                       num_workers=num_workers)
 

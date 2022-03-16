@@ -14,7 +14,7 @@ class Config(object):
   TRAINING_FILE = "./review-sentence_train_head.csv"
   TOKENIZER = transformers.BertTokenizer.from_pretrained(BERT_PATH,
                                                          do_lower_case=True)
-  PATIENCE = 5
+  PATIENCE = 2
 
 
 class BERTBaseUncased(nn.Module):
