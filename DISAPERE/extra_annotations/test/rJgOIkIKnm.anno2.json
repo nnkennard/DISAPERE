@@ -16,30 +16,30 @@
       "sentence_index": 0,
       "text": "In this paper, the authors claim that they are able to update the generator better to avoid generator mode collapse and also increase the stability of GANs training by indirectly increasing the entropy of the generator until it matches the entropy of the original data distribution using functional gradient methods.",
       "suffix": "\n\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rJgOIkIKnm",
       "sentence_index": 1,
       "text": "The paper is interesting and well written.",
       "suffix": "",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_clarity",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_clarity",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "rJgOIkIKnm",
       "sentence_index": 2,
       "text": "However, there is a lot of work coming out in the field of GANs currently, so I am not able to comment on the novelty of this regularization approach, and I am interested to know how this method performs when compared to other techniques to avoid mode collapse such as feature matching and mini-batch discrimination, etc.",
       "suffix": "",
-      "coarse": "arg_request",
-      "fine": "arg-request_explanation",
-      "asp": "asp_meaningful-comparison",
-      "pol": "none"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_explanation",
+      "aspect": "asp_meaningful-comparison",
+      "polarity": "none"
     }
   ],
   "rebuttal_sentences": [
@@ -49,10 +49,10 @@
       "sentence_index": 0,
       "text": "Thank you very much for the comment.",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_social",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_social",
       "alignment": [
-        "context_global",
+        "context_none",
         null
       ],
       "details": {}
@@ -63,8 +63,8 @@
       "sentence_index": 1,
       "text": "We believe that the core novelty of our work is in introducing a type of regularization based on a functional gradient.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -79,8 +79,8 @@
       "sentence_index": 2,
       "text": "Because we were able to conduct additional experiment in time, we also conducted feature matching as well and confirmed the superiority of DC-regularization over the method (Table 8).",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_done",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_done",
       "alignment": [
         "context_sentences",
         [

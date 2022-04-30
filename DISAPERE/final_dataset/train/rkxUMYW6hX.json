@@ -16,270 +16,270 @@
       "sentence_index": 0,
       "text": "The paper proposes a recurrent knowledge graph (bipartite graph between entities and location nodes) construction & updating mechanism for entity state tracking datasets such as (two) ProPara tasks and Recipes.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 1,
       "text": "The model goes through the following three steps: 1) it reads a sentence at each time step t and identifies the location of each entity via machine reading comprehension model such as DrQA (entities are predefined).",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 2,
       "text": "2) Co-reference module adjusts relationship scores (soft adjacency matrix) among nodes, including possibly new nodes introduced by the MRC model.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 3,
       "text": "3) to propagate the relational information across all the nodes, the model performs L layers of LSTM for each entity that attend on other nodes via attention (where the weights come from the adjacency matrix).",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 4,
       "text": "The model repeats the three steps for each sentence.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 5,
       "text": "The model is trained by directly supervising for the correct span by the MRC model at each time step, which is possible because the data provides strong supervision for each sentence (not just the answer at the end).",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 6,
       "text": "The model achieves the state of the art in the two tasks of ProPara and Recipes dataset.",
       "suffix": "\n\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 7,
       "text": "Strengths: The paper provides an elegant solution for tracking relationship between entities as time (sentence) progresses.",
       "suffix": "",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_motivation-impact",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_motivation-impact",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 8,
       "text": "I also agree with the authors that this line of work (dynamic KG construction and modification) is an important area of research.",
       "suffix": "",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_motivation-impact",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_motivation-impact",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 9,
       "text": "While the model shares a similar spirit to EntNet, I think the model has enough distinctions / contributions, especially given that it outperforms EntNet by a large margin.",
       "suffix": "",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_originality",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_originality",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 10,
       "text": "The model also obtains non-trivial improvement over previous SOTA models.",
       "suffix": "\n\n",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_originality",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_originality",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 11,
       "text": "Weaknesses: Paper could have been written better. I had hard time understanding it.",
       "suffix": "",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_clarity",
-      "pol": "pol_negative"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_clarity",
+      "polarity": "pol_negative"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 12,
       "text": "The notations are overall confusing and not explained well.",
       "suffix": "",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_clarity",
-      "pol": "pol_negative"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_clarity",
+      "polarity": "pol_negative"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 13,
       "text": "Also there are a few unclear parts which I discuss in questions below.",
       "suffix": "\n\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_heading",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_heading",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 14,
       "text": "Questions:",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_heading",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_heading",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 15,
       "text": "1. Are e_{i,t} and lambda_{i,t} vectors?",
       "suffix": "",
-      "coarse": "arg_request",
-      "fine": "arg-request_clarification",
-      "asp": "asp_clarity",
-      "pol": "pol_negative"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_clarification",
+      "aspect": "asp_clarity",
+      "polarity": "pol_negative"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 16,
       "text": "Scalars?",
       "suffix": "",
-      "coarse": "none",
-      "fine": "none",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "none",
+      "fine_review_action": "none",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 17,
       "text": "Abstract node notations? It is not clear in the model section.",
       "suffix": "",
-      "coarse": "none",
-      "fine": "none",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "none",
+      "fine_review_action": "none",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 18,
       "text": "Also, it took me a long time to figure out that \u2018i\u2019 is used to index each entity (it is mentioned later).",
       "suffix": "\n",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_clarity",
-      "pol": "pol_negative"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_clarity",
+      "polarity": "pol_negative"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 19,
       "text": "2. The paper says v_i (initial representation of each entity) is obtained by looking at the contextualized representations (LSTM outputs) of entity mention in the context.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_quote",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_quote",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 20,
       "text": "What happens if there are multiple mentions in the text? Which one does it look at?",
       "suffix": "\n",
-      "coarse": "arg_request",
-      "fine": "arg-request_explanation",
-      "asp": "asp_soundness-correctness",
-      "pol": "none"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_explanation",
+      "aspect": "asp_soundness-correctness",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 21,
       "text": "3. For the LSTM in the graph update, why does it have only one input? Shouldn\u2019t it have two inputs, one for previous hidden state and the other for input?",
       "suffix": "\n",
-      "coarse": "arg_request",
-      "fine": "arg-request_clarification",
-      "asp": "asp_soundness-correctness",
-      "pol": "none"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_clarification",
+      "aspect": "asp_soundness-correctness",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 22,
       "text": "4. Regarding Recipe experiments, the paper says it reaches a better performance than the baseline using just 10k examples out of 60k.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_quote",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_quote",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 23,
       "text": "This is great, but could you also report the number when the full dataset is used?",
       "suffix": "\n",
-      "coarse": "arg_request",
-      "fine": "arg-request_edit",
-      "asp": "asp_replicability",
-      "pol": "none"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_edit",
+      "aspect": "asp_replicability",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 24,
       "text": "5. What does it mean that in training time the model \u201cupdates\u201d the location node representation with the encoding of correct span. Do you mean you use the encoding instead?",
       "suffix": "\n",
-      "coarse": "arg_request",
-      "fine": "arg-request_explanation",
-      "asp": "asp_soundness-correctness",
-      "pol": "none"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_explanation",
+      "aspect": "asp_soundness-correctness",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 25,
       "text": "6. For ProPara task 2, what threshold did you choose to obtain the P/R/F1 score?",
       "suffix": "",
-      "coarse": "arg_request",
-      "fine": "arg-request_explanation",
-      "asp": "asp_replicability",
-      "pol": "none"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_explanation",
+      "aspect": "asp_replicability",
+      "polarity": "none"
     },
     {
       "review_id": "rkxUMYW6hX",
       "sentence_index": 26,
       "text": "Is it the threshold that maximizes F1?",
       "suffix": "",
-      "coarse": "arg_request",
-      "fine": "arg-request_clarification",
-      "asp": "asp_clarity",
-      "pol": "none"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_clarification",
+      "aspect": "asp_clarity",
+      "polarity": "none"
     }
   ],
   "rebuttal_sentences": [
@@ -289,10 +289,10 @@
       "sentence_index": 0,
       "text": "Thank you for the useful feedback.",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_social",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_social",
       "alignment": [
-        "context_global",
+        "context_none",
         null
       ],
       "details": {}
@@ -303,10 +303,10 @@
       "sentence_index": 1,
       "text": "We\u2019ve updated our paper to take it into account -- we\u2019ve updated the model description and the notation in Section 4 to clarify our method.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_done",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_done",
       "alignment": [
-        "context_in-rebuttal",
+        "context_none",
         null
       ],
       "details": {
@@ -319,10 +319,10 @@
       "sentence_index": 2,
       "text": "Two important additions are a high-level summary of the model, which we give at the beginning of Section 4, and a table (Table 2) that lists what each symbol represents along with its dimensions.",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_summary",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_summary",
       "alignment": [
-        "context_in-rebuttal",
+        "context_none",
         null
       ],
       "details": {}
@@ -333,10 +333,10 @@
       "sentence_index": 3,
       "text": "We also made several updates that address your specific questions.",
       "suffix": "\n\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_summary",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_summary",
       "alignment": [
-        "context_in-rebuttal",
+        "context_none",
         null
       ],
       "details": {}
@@ -347,8 +347,8 @@
       "sentence_index": 4,
       "text": "1. Are e_{i,t} and lambda_{i,t} vectors?",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -366,8 +366,8 @@
       "sentence_index": 5,
       "text": "Scalars?",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -385,8 +385,8 @@
       "sentence_index": 6,
       "text": "Abstract node notations? It is not clear in the model section.",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -404,8 +404,8 @@
       "sentence_index": 7,
       "text": "Also, it took me a long time to figure out that \u2018i\u2019 is used to index each entity (it is mentioned later).",
       "suffix": "\n\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -423,8 +423,8 @@
       "sentence_index": 8,
       "text": "The entity and location embeddings  e_{i,t} and lambda_{i,t} are d-dimensional vectors, although we also overload the symbols to refer to abstract nodes in the model\u2019s knowledge graphs.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -442,8 +442,8 @@
       "sentence_index": 9,
       "text": "In the updated manuscript we state both these facts explicitly and state much earlier that \u2018i\u2019 is the index for entities.",
       "suffix": "\n\n",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -461,8 +461,8 @@
       "sentence_index": 10,
       "text": "2. The paper says v_i (initial representation of each entity) is obtained by looking at the contextualized representations (LSTM outputs) of entity mention in the context.",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -478,8 +478,8 @@
       "sentence_index": 11,
       "text": "What happens if there are multiple mentions in the text? Which one does it look at?",
       "suffix": "\n\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -495,8 +495,8 @@
       "sentence_index": 12,
       "text": "When there are multiple mentions of entity i, the initial representation v_i is formed by summing the representations of each mention.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -512,8 +512,8 @@
       "sentence_index": 13,
       "text": "We have updated the paper to clarify this (Sec 4.1).",
       "suffix": "\n\n",
-      "coarse": "concur",
-      "fine": "rebuttal_done",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_done",
       "alignment": [
         "context_sentences",
         [
@@ -531,8 +531,8 @@
       "sentence_index": 14,
       "text": "3. For the LSTM in the graph update, why does it have only one input? Shouldn\u2019t it have two inputs, one for previous hidden state and the other for input?",
       "suffix": "\n\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -547,8 +547,8 @@
       "sentence_index": 15,
       "text": "Good point! We\u2019ve improved the notation used to describe the model in Section 4.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_done",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_done",
       "alignment": [
         "context_sentences",
         [
@@ -565,8 +565,8 @@
       "sentence_index": 16,
       "text": "The update equation now shows clearly that the LSTM takes in the concatenation of two node inputs (entity and location embeddings) along with the previous hidden state.",
       "suffix": "\n\n",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -581,8 +581,8 @@
       "sentence_index": 17,
       "text": "4. Regarding Recipe experiments, the paper says it reaches a better performance than the baseline using just 10k examples out of 60k.",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -598,8 +598,8 @@
       "sentence_index": 18,
       "text": "This is great, but could you also report the number when the full dataset is used?",
       "suffix": "\n\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -615,8 +615,8 @@
       "sentence_index": 19,
       "text": "We\u2019ve completed an experiment on the full Recipes dataset and updated the paper to describe the result (this experiment did not finish in time for the initial submission).",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_done",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_done",
       "alignment": [
         "context_sentences",
         [
@@ -634,8 +634,8 @@
       "sentence_index": 20,
       "text": "The model\u2019s F1 score improves from 51.64 on the partial data to 54.27 on the full data, surpassing the previous state of the art by a more significant margin.",
       "suffix": "\n\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_summary",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_summary",
       "alignment": [
         "context_sentences",
         [
@@ -651,8 +651,8 @@
       "sentence_index": 21,
       "text": "5. What does it mean that in training time the model \u201cupdates\u201d the location node representation with the encoding of the correct span. Do you mean you use the encoding instead?",
       "suffix": "\n\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -667,8 +667,8 @@
       "sentence_index": 22,
       "text": "We meant that we perform teacher-forcing to train the model.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -683,8 +683,8 @@
       "sentence_index": 23,
       "text": "During training, we extract the context encodings for the groundtruth span and use these in downstream operations  to obtain the node representations.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -699,8 +699,8 @@
       "sentence_index": 24,
       "text": "At test time, we use the MRC module\u2019s predicted span rather than the groundtruth.",
       "suffix": "\n\n",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -715,8 +715,8 @@
       "sentence_index": 25,
       "text": "6. For ProPara task 2, what threshold did you choose to obtain the P/R/F1 score?",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -732,8 +732,8 @@
       "sentence_index": 26,
       "text": "Is it the threshold that maximizes F1?",
       "suffix": "\n\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -749,8 +749,8 @@
       "sentence_index": 27,
       "text": "For ProPara task 2, our model was optimized for micro averaged F1 on the development set.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -766,8 +766,8 @@
       "sentence_index": 28,
       "text": "Tandon et al. (2018) were kind enough to provide us with their evaluation script.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [

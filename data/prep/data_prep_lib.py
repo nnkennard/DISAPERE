@@ -31,10 +31,10 @@ class AnnotationFields(object):
 
 ReviewSentence = collections.namedtuple(
     "ReviewSentence",
-    "review_id sentence_index text suffix coarse fine asp pol".split())
+    "review_id sentence_index text suffix review_action fine_review_action aspect polarity".split())
 RebuttalSentence = collections.namedtuple(
     "RebuttalSentence",
-    "review_id rebuttal_id sentence_index text suffix coarse fine alignment details".split())
+    "review_id rebuttal_id sentence_index text suffix rebuttal_stance rebuttal_action alignment details".split())
 
 with open("label_map.yaml") as stream:
   map_of_maps = yaml.safe_load(stream)
@@ -167,20 +167,29 @@ def clean_rebuttal_label(rebuttal_sentence_row, merge_map):
   label, details = build_rebuttal_details_from_label(LABEL_MAP[raw_label])
   coarse = REBUTTAL_FINE_TO_COARSE[label]
 
-  aligned_indices = [
-      merge_map[i] for i, val in enumerate(json.loads(aligned_array)) if val
-  ]
+  # If any of the aligned review sentences were merged, modify the aligned set
+  # to include all the merged indices
 
+  final_aligned_indices = set()
+  for i, val in enumerate(json.loads(aligned_array)):
+    if not val:
+      continue
+    else:
+      final_aligned_indices = final_aligned_indices.union(merge_map[i])
+  aligned_indices = list(sorted(final_aligned_indices))
+
+
+  # Clean up alignment details
   alignment_category = CONTEXT_TYPE_MAP[raw_category]
 
-  if aligned_indices == list(range(len(aligned_indices))):
-    if alignment_category == "context_sentences":
-      alignment_category = "context_error"
-    alignment = Alignment(alignment_category, None)
+  if aligned_indices == list(range(len(aligned_indices))): # This should be global
+    if not aligned_indices:
+      alignment = Alignment("context_none", None)
+    else:
+      alignment = Alignment("context_global", None)
   elif not aligned_indices:
     assert False
   else:
-    assert aligned_indices
     if alignment_category == "context_sentences":
       alignment = Alignment(alignment_category, aligned_indices)
     else:

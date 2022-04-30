@@ -23,7 +23,7 @@ parser.add_argument(
     help='path to annotation dump from annotation server')
 parser.add_argument('-i',
                     '--intermediate_file',
-                    default="temp/filtered_database.json",
+                    default="filtered_database.json",
                     type=str,
                     help='where to dump intermediate collated data items')
 

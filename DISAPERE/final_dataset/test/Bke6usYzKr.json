@@ -16,120 +16,120 @@
       "sentence_index": 0,
       "text": "The authors study the generalization error of two-layer neural nets, where an asymptotic point of view is taken.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "Bke6usYzKr",
       "sentence_index": 1,
       "text": "Their main results can be summarized as follows.",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_heading",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_heading",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "Bke6usYzKr",
       "sentence_index": 2,
       "text": "1. If only the second layer is optimized, they observe the double-descent phenomenon.",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "Bke6usYzKr",
       "sentence_index": 3,
       "text": "2. However, if only the first layer is optimized, the double-descent is not observed.",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "Bke6usYzKr",
       "sentence_index": 4,
       "text": "This shows that recent results for certain linear models (e.g. Song, Montanari 2019) do not directly transfer to neural networks.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "Bke6usYzKr",
       "sentence_index": 5,
       "text": "As the authors point out, however, if a different scaling is used in the asymptotics, double descent might still be observed.",
       "suffix": "\n\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "Bke6usYzKr",
       "sentence_index": 6,
       "text": "I see the following strengths of the paper.",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_heading",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_heading",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "Bke6usYzKr",
       "sentence_index": 7,
       "text": "-This is a very well-written paper with a clear message.",
       "suffix": "\n",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_clarity",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_clarity",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "Bke6usYzKr",
       "sentence_index": 8,
       "text": "-The result is important and gives new insights into the generalization properties of neural networks.",
       "suffix": "\n\n",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_originality",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_originality",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "Bke6usYzKr",
       "sentence_index": 9,
       "text": "In my view, this is an interesting contribution, which should be accepted.",
       "suffix": "\n\n",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_originality",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_originality",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "Bke6usYzKr",
       "sentence_index": 10,
       "text": "---------",
       "suffix": "\n\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_heading",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_heading",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "Bke6usYzKr",
       "sentence_index": 11,
       "text": "Thank you for your response. I will leave the rating unchanged.",
       "suffix": "",
-      "coarse": "arg_social",
-      "fine": "none",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_social",
+      "fine_review_action": "none",
+      "aspect": "none",
+      "polarity": "none"
     }
   ],
   "rebuttal_sentences": [
@@ -139,10 +139,10 @@
       "sentence_index": 0,
       "text": "Thank you for the comments and suggestions.",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_social",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_social",
       "alignment": [
-        "context_global",
+        "context_none",
         null
       ],
       "details": {}
@@ -153,8 +153,8 @@
       "sentence_index": 1,
       "text": "We agree that characterizing the generalization properties of neural network under different scalings is an important future direction.",
       "suffix": "\n\n",
-      "coarse": "concur",
-      "fine": "rebuttal_future",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_future",
       "alignment": [
         "context_sentences",
         [
@@ -169,8 +169,8 @@
       "sentence_index": 2,
       "text": "We have updated the manuscript with a few minor modifications: 1) Figure on the population risk of sigmoid network (first layer optimized) in addition to SoftPlus; 2) additional remarks on the population risk of network in the kernel regime in Section 5.2; 3) corrected typos.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_done",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_done",
       "alignment": [
         "context_sentences",
         [

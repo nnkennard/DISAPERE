@@ -16,290 +16,290 @@
       "sentence_index": 0,
       "text": "Summary:",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_heading",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_heading",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 1,
       "text": "This paper proposes a suite of tricks for training large-scale GANs, and obtaining state-of-the-art results for high-resolution images.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 2,
       "text": "The paper starts from a self-attention GAN baseline (Zhang 2018), and proposes:",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 3,
       "text": "-\tIncreasing batch size (8x) and model size (2x)",
       "suffix": "\n",
-      "coarse": "arg_other",
-      "fine": "none",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_other",
+      "fine_review_action": "none",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 4,
       "text": "-\tSplitting noise z in multiple chunks, and injecting it in multiple layers of the generator",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 5,
       "text": "-",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 6,
       "text": "Sampling from truncated normal distribution, where samples with norms that exceed a specific threshold are resampled.",
       "suffix": "",
-      "coarse": "none",
-      "fine": "none",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "none",
+      "fine_review_action": "none",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 7,
       "text": "This seems to be used only at test-time and is used to control variety-fidelity tradeoff.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 8,
       "text": "The generator is encouraged to be smooth using an orthogonal regularization term.",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 9,
       "text": "In addition, the paper proposes practical recipes for characterizing collapse in GANs.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 10,
       "text": "In the generator, the exploding of the top 3 singular values of each weight matrix seem to indicate collapse.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 11,
       "text": "In the discriminator, the sudden increase of the ratio of first/second singular value of weight matrices indicate collapse in GANs.",
       "suffix": "",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 12,
       "text": "Interestingly, the paper suggests that various regularization methods which can improve stability in GAN training, do not necessarily correspond to improvement in performance.",
       "suffix": "\n\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_summary",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_summary",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 13,
       "text": "Strengths:",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_heading",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_heading",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 14,
       "text": "-\tProposed techniques are intuitive and very well motivated",
       "suffix": "\n",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_motivation-impact",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_motivation-impact",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 15,
       "text": "-\tOne of the big pluses of this work is that authors try to \"quantify\" each proposed technique with training speed and/or performance improvement. This is really a good practice.",
       "suffix": "\n",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_substance",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_substance",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 16,
       "text": "-\tDetailed analysis for detecting collapse and improving stability in large-scale GAN",
       "suffix": "\n",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_substance",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_substance",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 17,
       "text": "-\tProbably no need to mention that, but results are quite impressive",
       "suffix": "\n\n",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_soundness-correctness",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_soundness-correctness",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 18,
       "text": "Weaknesses:",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_heading",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_heading",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 19,
       "text": "-\tComputational budget required is massive.",
       "suffix": "",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_replicability",
-      "pol": "pol_negative"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_replicability",
+      "polarity": "pol_negative"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 20,
       "text": "The paper mentions model use from 128-256 TPUs, which severely limits reproducibility of results.",
       "suffix": "\n\n",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_replicability",
-      "pol": "pol_negative"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_replicability",
+      "polarity": "pol_negative"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 21,
       "text": "Comments/Questions:",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_heading",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_heading",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 22,
       "text": "-\tCan you elaborate more on why BatchNorm statistics are computed across all devices as opposed to per-device? Was this crucial for best performance?",
       "suffix": "\n",
-      "coarse": "arg_request",
-      "fine": "arg-request_explanation",
-      "asp": "asp_soundness-correctness",
-      "pol": "none"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_explanation",
+      "aspect": "asp_soundness-correctness",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 23,
       "text": "-\tIt is not clear if provided analysis for large-scale GANs apply for small-medium sized GANs.",
       "suffix": "",
-      "coarse": "arg_request",
-      "fine": "arg-request_clarification",
-      "asp": "asp_clarity",
-      "pol": "none"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_clarification",
+      "aspect": "asp_clarity",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 24,
       "text": "Providing such analysis would be also helpful for the community.",
       "suffix": "\n",
-      "coarse": "arg_request",
-      "fine": "arg-request_result",
-      "asp": "asp_clarity",
-      "pol": "none"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_result",
+      "aspect": "asp_clarity",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 25,
       "text": "-\tHow do you see the impact of the suggested techniques on tackling harder data-modalities for GANs, e.g. text or sequential data in general?",
       "suffix": "\n\n",
-      "coarse": "arg_request",
-      "fine": "arg-request_explanation",
-      "asp": "asp_soundness-correctness",
-      "pol": "none"
+      "review_action": "arg_request",
+      "fine_review_action": "arg-request_explanation",
+      "aspect": "asp_soundness-correctness",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 26,
       "text": "Overall recommendation:",
       "suffix": "\n",
-      "coarse": "arg_structuring",
-      "fine": "arg-structuring_heading",
-      "asp": "none",
-      "pol": "none"
+      "review_action": "arg_structuring",
+      "fine_review_action": "arg-structuring_heading",
+      "aspect": "none",
+      "polarity": "none"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 27,
       "text": "The paper is well written, ideas are well motivated/justified and results are very compelling.",
       "suffix": "",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "asp_motivation-impact",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "asp_motivation-impact",
+      "polarity": "pol_positive"
     },
     {
       "review_id": "HklmZ1xqhm",
       "sentence_index": 28,
       "text": "This is a good paper and I higly recommend acceptance.",
       "suffix": "",
-      "coarse": "arg_evaluative",
-      "fine": "none",
-      "asp": "arg_other",
-      "pol": "pol_positive"
+      "review_action": "arg_evaluative",
+      "fine_review_action": "none",
+      "aspect": "arg_other",
+      "polarity": "pol_positive"
     }
   ],
   "rebuttal_sentences": [
@@ -309,10 +309,10 @@
       "sentence_index": 0,
       "text": "We would like to thank Reviewer 1 for their review and constructive suggestions.",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_social",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_social",
       "alignment": [
-        "context_global",
+        "context_none",
         null
       ],
       "details": {}
@@ -323,10 +323,10 @@
       "sentence_index": 1,
       "text": "Our responses inline:",
       "suffix": "\n\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
-        "context_in-rebuttal",
+        "context_none",
         null
       ],
       "details": {}
@@ -337,8 +337,8 @@
       "sentence_index": 2,
       "text": ">Can you elaborate more on why BatchNorm statistics are computed across all devices as opposed to per-device? Was this crucial for best performance?",
       "suffix": "\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -353,8 +353,8 @@
       "sentence_index": 3,
       "text": "-The primary reason is to ensure that training is invariant to the per-device batch size.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -369,8 +369,8 @@
       "sentence_index": 4,
       "text": "When scaling from resolution 128x128 to 256x256, we increase the number of devices but maintain the same overall batch size, reducing the per-device batch size.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -385,8 +385,8 @@
       "sentence_index": 5,
       "text": "Cross-replica BatchNorm ensures that the smaller per-device batch size does not affect training.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -401,8 +401,8 @@
       "sentence_index": 6,
       "text": "Switching to per-device BatchNorm at 128x128 results in a performance drop, albeit not a crippling one: for a model which would otherwise get an IS of 92 and an FID of 9.5, switching to per-device BatchNorm results in an IS of 78 and FID of 13.",
       "suffix": "\n\n",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
@@ -417,8 +417,8 @@
       "sentence_index": 7,
       "text": ">It is not clear if provided analysis for large-scale GANs apply for small-medium sized GANs.",
       "suffix": "",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -434,8 +434,8 @@
       "sentence_index": 8,
       "text": "Providing such analysis would be also helpful for the community.",
       "suffix": "\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -451,8 +451,8 @@
       "sentence_index": 9,
       "text": "-The goal of this work is to explore GANs at large scale; the exploration of small or medium scale models would indeed be interesting for another study.",
       "suffix": "",
-      "coarse": "dispute",
-      "fine": "rebuttal_reject-request",
+      "rebuttal_stance": "dispute",
+      "rebuttal_action": "rebuttal_reject-request",
       "alignment": [
         "context_sentences",
         [
@@ -470,8 +470,8 @@
       "sentence_index": 10,
       "text": "Having said that, we do evaluate BigGAN on conditional CIFAR-10 (mentioned briefly in Appendix C.2) and obtain an IS of 9.22 and an FID of 14.73 without truncation, which to our knowledge are better than any published results.",
       "suffix": "\n\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_summary",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_summary",
       "alignment": [
         "context_sentences",
         [
@@ -487,8 +487,8 @@
       "sentence_index": 11,
       "text": ">How do you see the impact of the suggested techniques on tackling harder data-modalities for GANs, e.g. text or sequential data in general?",
       "suffix": "\n",
-      "coarse": "nonarg",
-      "fine": "rebuttal_structuring",
+      "rebuttal_stance": "nonarg",
+      "rebuttal_action": "rebuttal_structuring",
       "alignment": [
         "context_sentences",
         [
@@ -503,8 +503,8 @@
       "sentence_index": 12,
       "text": "-Any of the proposed techniques could be applied to standard GANs for text or other sequential data in principle, but we have not experimented with these applications ourselves.",
       "suffix": "",
-      "coarse": "concur",
-      "fine": "rebuttal_answer",
+      "rebuttal_stance": "concur",
+      "rebuttal_action": "rebuttal_answer",
       "alignment": [
         "context_sentences",
         [
