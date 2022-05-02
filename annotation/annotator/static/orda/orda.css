@@ -1,0 +1,117 @@
+.post {
+  position: relative;
+  padding: 20px;
+  flex-basis: auto;
+}
+
+.post__category {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.post__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0px 0 10px;
+}
+
+.post__content {
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+.post__category,
+.post__permalink {
+  color: #4a4a4a;
+  text-decoration: underline;
+}
+
+.post__permalink {
+  position: absolute;
+  bottom: 20px;
+}
+
+.fb-auto {
+  flex-basis: auto;
+}
+
+.white {
+  background: #ffffff;
+}
+
+.lightblue {
+  background:  #d5dbdb;
+}
+
+td {
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.red1 {
+  background: #f2d7d5;
+}
+
+.red2 {
+  background: #fadbd8;
+}
+
+.purple1 {
+  background: #ebdef0;
+}
+
+.purple2 {
+  background: #e8daef;
+}
+
+.blue1 {
+  background: #d4e6f1;
+}
+
+.blue2 {
+  background: #d6eaf8;
+}
+
+.green1 {
+  background: #d1f2eb;
+}
+
+.green2 {
+  background: #d0ece7;
+}
+
+.green3 {
+  background: #d4efdf;
+}
+
+.green4 {
+  background: #d5f5e3;
+}
+
+.yellow {
+  background: #fcf3cf;
+}
+
+.orange1 {
+  background: #fdebd0;
+}
+
+.orange2 {
+  background: #fae5d3;
+}
+
+.orange3 {
+  background: #f6ddcc;
+}
+
+.sentence:hover {
+    background-color:  #fcf3cf;
+}
+
+a, a:hover { text-decoration: underline; }
+
+tr.border_bottom td {
+  border-bottom: 1px solid lightgrey;
+}

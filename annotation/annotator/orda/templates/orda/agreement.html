@@ -1,0 +1,58 @@
+<head>
+   <title> Inter-annotator agreement dashboard </title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
+</head>
+<body>
+   {% load static %}
+   <div class="container">
+      <div class="columns">
+         <div class="column">
+            <h3 class="is-h3"> Review argument agreement </h3>  <br>
+            Argument type: {{info.review_arg_agreement.arg}} <br>
+            Aspect: {{info.review_arg_agreement.asp}} <br>
+            Polarity: {{info.review_arg_agreement.pol}} <br>
+            Fine-grained request type: {{info.review_arg_agreement.req}} <br>
+            Fine-grained structuring type: {{info.review_arg_agreement.struc}} <br>
+         </div>
+         <div class="column">
+            <table class="table">
+               <tr>
+                  <td> Annotator </td>
+                  <td> Not started </td>
+                  <td> Started </td>
+                  <td> Complete </td>
+               </tr>
+               {% for tup in info.annotator_counts %}
+               <tr>
+                  <td> {{tup.0}} </td>
+                  <td> {{tup.1}} </td>
+                  <td> {{tup.2}} </td>
+                  <td> {{tup.3}} </td>
+               </tr>
+               {% endfor %}
+            </table>
+         </div>
+         <div class="column">
+            <table class="table">
+               <tr>
+                  <td> Status </td>
+                  <td> Count </td>
+               </tr>
+               {% for tup in info.overall_counts %}
+               <tr>
+                  <td> {{tup.0}} </td>
+                  <td> {{tup.1}} </td>
+               </tr>
+               {% endfor %}
+            </table>
+
+	    <b> Per-subset counts </b> <br>
+	    {% for item in info.almost_done_counter %}
+	    {{ item.0 }} : {{ item.1 }} <br>
+	    {% endfor %}
+	    
+         </div>
+      </div>
+   </div>
+</body>
+

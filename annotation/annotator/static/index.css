@@ -1,0 +1,40 @@
+.greybody {
+  background-color: #7d7d7d;
+}
+
+.card{
+max-height:14000px;
+}
+
+ .card-body{
+     width: 95% !important;
+     margin: 0 auto;
+ }
+
+div {
+  background-color: #ffffff;
+}
+
+.spacerBetween {
+  height: 35px;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+.scroll-box {
+  overflow-y: scroll;
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.x {
+  text-decoration: underline;
+}
+
+.sentence:hover {
+    background-color:  #fcf3cf;
+}

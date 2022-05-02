@@ -1,0 +1,192 @@
+--- 
+alignment_categories: 
+  -
+    kw: some-align
+    label: "Aligned sentences have been highlighted"
+  -
+    kw: cant-determine
+    label: "Cannot determine context"
+  -
+    kw: glob-context
+    label: "Global context"
+  -
+    kw: no-context
+    label: "No context"
+  -
+    kw: rebuttal-context
+    label: "Context is in rebuttal"
+
+
+review_categories:
+  - 
+    name: Argumentative
+    short: arg
+    subcategories:
+      - Request
+      - Evaluative
+      - Fact
+      - Social
+      - Structuring
+      - Other
+  -
+    name: Aspect
+    short: asp
+    subcategories:
+      - Motivation/Impact
+      - Originality
+      - Substance
+      - Soundness/Correctness
+      - Replicability
+      - Meaningful Comparison
+      - Clarity
+      - Other
+  -
+    name: Polarity
+    short: pol
+    subcategories:
+      - "N-Negative"
+      - "U-Neutral"
+      - "P-Positive"
+  -
+    name: "Request type"
+    short: req
+    subcategories:
+      - Typo
+      - Edit
+      - Result
+      - Experiment
+      - Clarification
+      - Explanation
+  -
+    name: "Structuring type"
+    short: struc
+    subcategories:
+      - Summary
+      - Heading
+      - Quote
+
+allowed_menus: # Arg is required for all
+  -
+    name: "Request"
+    required:
+      - "req"
+    allowed:
+      - "asp"
+      - "pol"
+  -
+    name: "Evaluative"
+    required:
+      - "asp"
+      - "pol"
+    allowed:
+  -
+    name: "Fact"
+    required:
+    allowed:
+  -
+    name: "Structuring"
+    required:
+      - "struc"
+    allowed:
+  -
+    name: "Social"
+    required:
+    allowed:
+  -
+    name: "Other"
+    required:
+    allowed:
+
+rebuttal_relations:
+  - 
+    key: done
+    description: "Task done"
+    category: Maybe-arg
+    followup: manu-edit
+  - 
+    key: by-cr
+    description: "Task will be done"
+    category: Maybe-arg
+    followup: manu-edit
+  - 
+    key: answer
+    description: "Answer"
+    category: Accept
+    followup:
+  - 
+    key: future
+    description: "Accept for future work"
+    category: Accept
+    followup:
+  - 
+    key: accept-praise
+    description: "Accept praise"
+    category: Accept
+    followup:
+  - 
+    key: concede-criticism
+    description: "Concede criticism"
+    category: Accept
+    followup:
+  - 
+    key: refute-question
+    description: "Refute question"
+    category: Reject
+    followup:
+  - 
+    key: reject-request
+    description: "Reject request"
+    category: Reject
+    followup: scope
+  - 
+    key:  contradict-assertion
+    description: "Contradict assertion"
+    category: Reject
+    followup:
+  - 
+    key: reject-criticism
+    description: "Reject criticism"
+    category: Reject
+    followup:
+  - 
+    key: mitigate-criticism
+    description: "Mitigate criticism"
+    category: Reject
+    followup:
+  - 
+    key: mitigate-praise
+    description: "Mitigate praise" 
+    category: Reject
+    followup:
+  - 
+    key: structuring
+    description: "Structuring"
+    category: Non-arg
+    followup:
+  - 
+    key: social
+    description: "Social"
+    category: Non-arg
+    followup:
+  - 
+    key: followup
+    description: "Follow-up question"
+    category: Non-arg
+    followup:
+  - 
+    key: summary
+    description: "Summary"
+    category: Non-arg
+    followup:
+  - 
+    key: multiple
+    description: "Multiple"
+    category: Error
+    followup:
+  - 
+    key: other
+    description: "Other"
+    category: Error
+    followup:
+
+
