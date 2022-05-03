@@ -1,1 +1,6 @@
 fine_review_action Test F1 0.4482987617377078
+polarity Test F1 0.7088178530252404
+rebuttal_action Test F1 0.3123230178451253
+rebuttal_stance Test F1 0.4346032198267254
+review_action Test F1 0.6042467034062513
+aspect Test F1 0.3827981385031822
