@@ -1,0 +1,17 @@
+<html>
+  <head> <title> Submitted </title> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
+</head>
+  <body> 
+    <script>
+         setTimeout(function(){
+            window.location.href = document.getElementById("redir_url").innerText;
+         }, 1000);
+      </script>
+  	<div class="container">
+  		<br>
+      Submitted, thanks! <br>
+      Redirecting you in 1 second to your assignment
+      <span id="redir_url" style="display:none">/orda/assignments/{{ initials }}</span>
+  		</div> </body>
+</html>

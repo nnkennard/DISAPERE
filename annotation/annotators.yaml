@@ -1,0 +1,14 @@
+---
+annotators:
+- name: Anno1
+  initials: ABC
+- name: Anno2
+  initials: DEF
+- name: Anno3
+  initials: GHI
+staff:
+- name: Staff1
+  initials: JKL
+- name: Staff2
+  initials: MNO
+

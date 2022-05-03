@@ -1,0 +1,61 @@
+<head>
+   <title> Open Review Discourse Annotation - Annotation Center </title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
+</head>
+<body>
+   {% load static %}
+   <link rel="stylesheet" type="text/css" href="{% static 'orda/orda.css' %}">
+   <div class='lightblue'>
+      <section class="section">
+         <div class="container white text-center">
+            <div class="column is-half is-offset-3 has-text-centered">
+
+               <h3 class="title is-3">
+               Open Review Discourse Annotation </h2>
+               Please select your name from the table below to go to your assignments.
+               <br>
+               <br>
+               <center>
+                  <table class="table">
+                     <tr>
+                        <td> Annotator </td>
+                        <td> Initials </td>
+                        <td> Link </td>
+                     </tr>
+                     {% for annotator in annotators %}
+                     {% if annotator.is_active %}
+                     <tr>
+                        <td> {{ annotator.name }} </td>
+                        <td> {{ annotator.initials }} </td>
+                        <td><a href="/orda/assignments/{{ annotator.initials }}">
+                           Link</a>
+                        </td>
+                     </tr>
+                     {% endif %}
+                     {% endfor %}
+                  </table>
+                  <table class="table">
+                     <tr>
+                        <td> Staff </td>
+                        <td> Initials </td>
+                        <td> Link </td>
+                     </tr>
+                     {% for staff_member in staff %}
+                     {% if staff_member.is_active %}
+                     <tr>
+                        <td> {{ staff_member.name }} </td>
+                        <td> {{ staff_member.initials }} </td>
+                        <td><a href="/orda/assignments/{{ staff_member.initials }}">
+                           Link</a>
+                        </td>
+                     </tr>
+                     {% endif %}
+                     {% endfor %}
+                  </table>
+               </center>
+            </div>
+         </div>
+      </section>
+   </div>
+</body>
+

@@ -1,0 +1,66 @@
+<head>
+   <title> {{ annotator.name }}'s annotation assignments </title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
+</head>
+<body>
+   {% load static %}
+   <link rel="stylesheet" type="text/css" href="{% static 'orda/orda.css' %}">
+   <div class='lightblue'>
+      <section class="section">
+         <div class="container white">
+
+            <div class="tile is-ancestor">
+               <div class="tile is-parent white">
+                  <article class="tile is-child white post">
+               <h3 class="title is-3"> Hello, {{ annotator.name }}! </h3>
+               If you are not {{ annotator.name }}, go to <a href="/orda/">this page</a> to find your assignments. <br> <br>
+
+
+            <table class="table">
+               <br>
+               <tr>
+                  <td> Index </td>
+                  <td> </td>
+                  <td> Review status </td>
+                  <td> </td>
+                  <td> Rebuttal status </td>
+                  <td> Reviewer </td>
+                  <td> Title </td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               {% for example in examples %}
+               <tr>
+                  <td> {{ forloop.counter0 | add:1 }} </td>
+                  <td><a href="/orda/review/{{ annotator.initials }}/{{ example.review_id }}/"> Review </a></td>
+                  <td> 
+
+                  {% if example.review_status %}
+                     Complete
+                  {% else %}
+                     Not started
+                  {% endif %} </td>
+                  {% if example.review_status %}
+                  <td>  <a href="/orda/rebuttal/{{ annotator.initials }}/{{ example.review_id }}/0/">
+                     Rebuttal </a> 
+                  </td>
+                  {% else %}
+                  <td> <i> Rebuttal </i> </td>
+                  {% endif %}
+                  <td> {{ example.rebuttal_status }}</td>
+                  <td> {{ example.reviewer }} </td>
+                  <td>
+                     {{ example.title}}
+                  </td>
+               </tr>
+               </li>
+               {% endfor %}
+            </table>
+                        </article>
+         </div>
+      </div>
+         </div>
+      </section>
+   </div>
+</body>
+
