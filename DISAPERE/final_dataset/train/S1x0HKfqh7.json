@@ -132,7 +132,7 @@
       "rebuttal_stance": "dispute",
       "rebuttal_action": "rebuttal_reject-criticism",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}
@@ -146,7 +146,7 @@
       "rebuttal_stance": "dispute",
       "rebuttal_action": "rebuttal_reject-criticism",
       "alignment": [
-        "context_none",
+        "context_unknown",
         null
       ],
       "details": {}

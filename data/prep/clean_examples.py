@@ -157,9 +157,9 @@ def main():
     reb_lens.append(len(i.rebuttal_sentences))
 
 
-  write_annotations_to_dir(final_annotations, "../../DISAPERE/final_dataset/")
+  write_annotations_to_dir(final_annotations, "../../temp_DISAPERE/final_dataset/")
   write_annotations_to_dir(extra_annotations,
-                             "../../DISAPERE/extra_annotations/",
+                             "../../temp_DISAPERE/extra_annotations/",
                              append_annotator=True)
 
 

@@ -242,7 +242,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_social",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}
@@ -328,7 +328,7 @@
       "rebuttal_stance": "dispute",
       "rebuttal_action": "rebuttal_mitigate-criticism",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}

@@ -92,7 +92,7 @@
       "rebuttal_stance": "concur",
       "rebuttal_action": "rebuttal_accept-praise",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}
@@ -106,7 +106,7 @@
       "rebuttal_stance": "dispute",
       "rebuttal_action": "rebuttal_reject-criticism",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}
@@ -184,7 +184,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_summary",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}
@@ -198,7 +198,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_summary",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}

@@ -172,7 +172,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_social",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}
@@ -502,7 +502,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_social",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}
@@ -516,7 +516,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_summary",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}

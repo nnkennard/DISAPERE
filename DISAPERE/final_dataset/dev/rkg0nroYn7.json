@@ -884,7 +884,7 @@
       "rebuttal_stance": "other",
       "rebuttal_action": "rebuttal_none",
       "alignment": [
-        "context_none",
+        "context_error",
         null
       ],
       "details": {}

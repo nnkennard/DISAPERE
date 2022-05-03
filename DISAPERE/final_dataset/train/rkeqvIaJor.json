@@ -112,7 +112,7 @@
       "rebuttal_stance": "concur",
       "rebuttal_action": "rebuttal_concede-criticism",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}

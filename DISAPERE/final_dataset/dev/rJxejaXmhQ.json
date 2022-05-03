@@ -132,7 +132,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_social",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}
@@ -146,7 +146,7 @@
       "rebuttal_stance": "concur",
       "rebuttal_action": "rebuttal_done",
       "alignment": [
-        "context_none",
+        "context_in-rebuttal",
         null
       ],
       "details": {
@@ -162,7 +162,7 @@
       "rebuttal_stance": "dispute",
       "rebuttal_action": "rebuttal_reject-request",
       "alignment": [
-        "context_none",
+        "context_in-rebuttal",
         null
       ],
       "details": {
@@ -178,7 +178,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_structuring",
       "alignment": [
-        "context_none",
+        "context_in-rebuttal",
         null
       ],
       "details": {}
@@ -632,7 +632,7 @@
       "rebuttal_stance": "other",
       "rebuttal_action": "rebuttal_none",
       "alignment": [
-        "context_none",
+        "context_error",
         null
       ],
       "details": {}

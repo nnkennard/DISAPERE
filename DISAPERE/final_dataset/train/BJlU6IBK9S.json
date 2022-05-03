@@ -462,7 +462,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_social",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}
@@ -476,7 +476,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_social",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}
@@ -490,7 +490,7 @@
       "rebuttal_stance": "concur",
       "rebuttal_action": "rebuttal_done",
       "alignment": [
-        "context_none",
+        "context_in-rebuttal",
         null
       ],
       "details": {
@@ -506,7 +506,7 @@
       "rebuttal_stance": "concur",
       "rebuttal_action": "rebuttal_by-cr",
       "alignment": [
-        "context_none",
+        "context_in-rebuttal",
         null
       ],
       "details": {
@@ -983,7 +983,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_other",
       "alignment": [
-        "context_none",
+        "context_in-rebuttal",
         null
       ],
       "details": {}
@@ -997,7 +997,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_other",
       "alignment": [
-        "context_none",
+        "context_in-rebuttal",
         null
       ],
       "details": {}

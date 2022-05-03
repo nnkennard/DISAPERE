@@ -172,7 +172,7 @@
       "rebuttal_stance": "nonarg",
       "rebuttal_action": "rebuttal_social",
       "alignment": [
-        "context_none",
+        "context_global",
         null
       ],
       "details": {}
@@ -204,7 +204,7 @@
       "rebuttal_stance": "other",
       "rebuttal_action": "rebuttal_none",
       "alignment": [
-        "context_none",
+        "context_error",
         null
       ],
       "details": {}
@@ -341,7 +341,7 @@
       "rebuttal_stance": "other",
       "rebuttal_action": "rebuttal_none",
       "alignment": [
-        "context_none",
+        "context_error",
         null
       ],
       "details": {}
@@ -371,7 +371,7 @@
       "rebuttal_stance": "other",
       "rebuttal_action": "rebuttal_none",
       "alignment": [
-        "context_none",
+        "context_error",
         null
       ],
       "details": {}
