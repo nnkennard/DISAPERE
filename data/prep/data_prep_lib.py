@@ -182,19 +182,14 @@ def clean_rebuttal_label(rebuttal_sentence_row, merge_map):
   # Clean up alignment details
   alignment_category = CONTEXT_TYPE_MAP[raw_category]
 
-  if aligned_indices == list(range(len(aligned_indices))): # This should be global
-    if not aligned_indices:
-      alignment = Alignment("context_none", None)
-    else:
-      alignment = Alignment("context_global", None)
-  elif not aligned_indices:
-    assert False
-  else:
-    if alignment_category == "context_sentences":
+  if aligned_indices and aligned_indices == list(range(len(aligned_indices))): # This should be global
+    alignment = Alignment("context_none", None)
+  elif alignment_category == "context_sentences":
       alignment = Alignment(alignment_category, aligned_indices)
-    else:
-      alignment = Alignment(alignment_category, None)
+  else:
+    alignment = Alignment(alignment_category, None)
 
+  print(alignment_category, alignment.category)
   return index, label, coarse, alignment, details
 
 
