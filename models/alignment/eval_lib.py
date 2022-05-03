@@ -37,6 +37,8 @@ def calculate_official_mrr(cosine_scores, rebuttal_sentences):
   reb_len, rev_len = cosine_scores.shape
   rrs = []
   aps = []
+  no_match_rrs = []
+  no_match_aps = []
   assert reb_len == len(rebuttal_sentences)
   for reb_i, rebuttal_sentence in enumerate(rebuttal_sentences):
     _, aligned_indices = rebuttal_sentence['alignment']
@@ -46,9 +48,13 @@ def calculate_official_mrr(cosine_scores, rebuttal_sentences):
       relevant = aligned_indices
     is_relevant = convert_scores_to_is_relevant(cosine_scores[reb_i],
     relevant)
-    rrs.append(reciprocal_rank(is_relevant))
-    aps.append(average_precision(is_relevant))
-  return rrs, aps
+    if aligned_indices is None:
+      no_match_rrs.append(reciprocal_rank(is_relevant))
+      no_match_aps.append(average_precision(is_relevant))
+    else:
+      rrs.append(reciprocal_rank(is_relevant))
+      aps.append(average_precision(is_relevant))
+  return rrs, aps, no_match_rrs, no_match_aps
 
 
 
@@ -65,6 +71,8 @@ def eval_dir(model_save_path,
   all_rr = []
   official_rr = []
   official_ap = []
+  no_match_official_rr = []
+  no_match_official_ap = []
   for filename in glob.glob(glob_path):
     with open(filename) as fin:
       data = json.load(fin)
@@ -77,10 +85,12 @@ def eval_dir(model_save_path,
     # Compute cosine-similarities for each sentence with each other sentence
     cosine_scores = util.pytorch_cos_sim(rebuttal_sentences_emb,
                                          review_sentences_emb)
-    rrs, aps = calculate_official_mrr(cosine_scores,
+    rrs, aps, no_match_rrs, no_match_aps = calculate_official_mrr(cosine_scores,
     data['rebuttal_sentences'])
     official_ap += aps
     official_rr += rrs
+    no_match_official_ap += no_match_aps
+    no_match_official_rr += no_match_rrs
     ranks = torch.argsort(-cosine_scores, dim=1)
     for ctr, rb_s in enumerate(data["rebuttal_sentences"]):
       rr = 0
@@ -100,11 +110,21 @@ def eval_dir(model_save_path,
       rr = rr / len(alignments)
       all_rr.append(rr)
   with open("results.txt", "a") as f:
-    f.write("{} {} MRR: {}\n".format(model_save_path, subset, np.mean(all_rr)))
+    f.write("{} {} Old MRR: {}\n".format(model_save_path, subset, np.mean(all_rr)))
     f.write("{} {} MAP: {}\n".format(model_save_path, subset,
+    np.mean(official_ap + no_match_official_ap)))
+    f.write("{} {} MRR: {}\n".format(model_save_path, subset,
+    np.mean(official_rr+no_match_official_rr)))
+    f.write("{} {} Easy MAP: {}\n".format(model_save_path, subset,
     np.mean(official_ap)))
-    f.write("{} {} Official MRR: {}\n".format(model_save_path, subset,
+    f.write("{} {} Easy MRR: {}\n".format(model_save_path, subset,
     np.mean(official_rr)))
+    f.write("{} {} No match MAP: {}\n".format(model_save_path, subset,
+    np.mean(no_match_official_ap)))
+    f.write("{} {} No match MRR: {}\n".format(model_save_path, subset,
+    np.mean(no_match_official_rr)))
+
+
     f.write("=" *80 +"\n")
     with open("no_match_rank_" + subset + ".json", 'w') as f:
       json.dump(no_match_ranks, f)
@@ -118,5 +138,5 @@ if __name__ == "__main__":
   #         subset="dev")
   eval_dir(NAACL_FINAL_MODEL,
            data_dir="../../DISAPERE/final_dataset",
-           subset="test")
+           subset="dev")
 
