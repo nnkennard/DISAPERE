@@ -1,14 +1,5 @@
 # DISAPERE: A Dataset for DIscourse Structure in Academic PEer REview
 
-## Downloading the DISAPERE dataset
-
-To download the dataset, run
-
-```
-wget ???
-```
-
-## Other information
 
 Besides the DISAPERE dataset, this repository contains code for:
 1. Running the DISAPERE annotation server
@@ -27,8 +18,6 @@ conda create --name disapere_env python=3.8
 conda activate disapere_env
 python -m pip install -r data_requirements.txt
 ```
-
-### Running the DISAPERE annotation server
 
 ### Processing the output of the DISAPERE annotation server
 
